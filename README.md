@@ -7,7 +7,9 @@ José Gallardo Arancibiam 2*
 Claudio Ayala Bravom 3
 
 1 Universidad Católica del Norte. Departamento de Ingeniería de Sistemas Y Computación. Antofagasta, Chile. har004@alumnos.ucn.cl: 
+
 2 Universidad Católica del Norte. Departamento de Ingeniería de Sistemas Y Computación. Antofagasta, Chile. jgallardo@ucn.cl:
+
 3 Universidad de Antofagasta. Departamento de Ingeniería Eléctrica. Antofagasta, Chile. claudio.ayala@uantof.cl:
 
 * José Gallardo Arancibia2: jgallardo@ucn.cl
