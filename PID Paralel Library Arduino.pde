@@ -1,4 +1,3 @@
-B.1 PID librería Arduino
 #include <PID_v1.h> //librería PID
 #include <Servo.h>  //librería Servo
 #define MAX_SIGNAL 2000 //máxima salida del brushless
