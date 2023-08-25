@@ -62,7 +62,7 @@ Keywords: Automatic control; control algorithms; angular control; PID control
 
 ## Resources
 
-- [Paper](https://www.ingeniare.cl/index.php?option=com_ingeniare&view=d&doc=107/art06.pdf&aid=817&vid=107&lang=es)
+- [Paper](https://scielo.conicyt.cl/pdf/ingeniare/v28n4/0718-3305-ingeniare-28-04-612.pdf)
 - [Full video](https://drive.google.com/file/d/16bK7dAosLCTXEhoV1iuj8vgqMc72WxBu/view?usp=sharing)
 
 1. Fork the project
