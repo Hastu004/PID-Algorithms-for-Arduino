@@ -29,22 +29,16 @@ namespace PID_GUI
 
             chart1.ChartAreas[0].AxisX.Maximum = 200;
             chart1.ChartAreas[0].AxisX.Minimum = 0;
-
             textBoxPWM.Text = "1000";
-
             textBoxSetpoint.Text = SetPoint.ToString();
-
         }
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            // agrega los puertos seriales conectados al combo box
             llenarDropdownSerial();
-
             tareaLeerSerial = new Thread(new ThreadStart(leerSerial));
         
         }
-				// lee el puerto serial con la ayuda de un hilo
         private void leerSerial()
         {
             while (seguir == true)
@@ -57,10 +51,8 @@ namespace PID_GUI
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
-               
+                }  
             }
-
         }
 
         private void actualizarChart()
@@ -98,13 +90,7 @@ namespace PID_GUI
             {
                 MessageBox.Show(ex.Message);
             }
-
-
-        
         }
-
-
-			// abre la conexión con el puerto serial
         private void buttonPuertoSerial_Click(object sender, EventArgs e)
         {
             if (comboBoxPuertoSerial.Text!="")
@@ -133,8 +119,6 @@ namespace PID_GUI
                 MessageBox.Show("Seleccione un puerto serial!");
             }
         }
-    
-			// cierra el puerto serial
         private void buttonCerrarPuertoSerial_Click(object sender, EventArgs e)
         {
                 if (serialPort1.IsOpen)
@@ -159,8 +143,6 @@ namespace PID_GUI
                 
 
         }
-
-			// cambia el setpoint en el gráfico y envía el nuevo setpoint al Arduino por el puerto serial
         private void buttonCambiar_Click(object sender, EventArgs e)
         {
             if(double.Parse(textBoxSetpoint.Text.ToString()) > 90)
@@ -184,7 +166,6 @@ namespace PID_GUI
         private void buttonActualizar_Click(object sender, EventArgs e)
         {
             comboBoxPuertoSerial.Items.Clear();
-            // agrega los puertos seriales conectados al combo box
             llenarDropdownSerial();
         }
         private void llenarDropdownSerial()
@@ -199,7 +180,7 @@ namespace PID_GUI
 
         private void buttonCambiarPWM_Click(object sender, EventArgs e)
         {
-            serialPort1.Write(textBoxPWM.ToString()); // envía un PWM al Arduino 
+            serialPort1.Write(textBoxPWM.ToString());
         }
     }
 }
